@@ -7,11 +7,11 @@
 using namespace std;
 
 
-Tabla::Tabla(int dim)
+Tabla::Tabla(int dim, int nr)
     {
         celule.resize(dim, vector<Celula>(dim));
         BOARD_SIZE = dim;
-        NUM_MINE = dim ;
+        NUM_MINE = dim * nr;
     }
 
 void Tabla::generareMine()

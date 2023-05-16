@@ -13,7 +13,7 @@ private:
     int BOARD_SIZE ;
     int NUM_MINE;
 public:
-    Tabla(int);
+    Tabla(int,int);
     void generareMine();
     void generareNumere();
     bool gameOver() const;
