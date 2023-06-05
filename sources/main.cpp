@@ -7,9 +7,8 @@ using namespace std;
 int main()
 {
 	int dim, nr;
-	char start;
 	system("clear");
-	
+	char start;
 	cout<<"Minesweeper este un joc clasic de strategie pentru un singur jucător, "<<endl;
     	cout<<"care implică descoperirea și marcarea tuturor celulelor care conțin "<<endl;
     	cout<<"mine într-un câmp de mine, evitând astfel să declanșeze vreo mină. "<<endl;
@@ -33,7 +32,7 @@ int main()
 		system("clear");
 		cout << "Alege dificultatea jocului(1 - usor; 2 - mediu; 3 - greu): ";
 		cin >> nr;
-		if(nr!=1 || nr!=2 || nr!=3)
+		if(nr!=1 && nr!=2 && nr!=3)
 			break;
 		dim = nr*5;
 		if(!(dim>16 || dim <5))
