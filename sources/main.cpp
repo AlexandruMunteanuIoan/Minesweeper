@@ -7,9 +7,11 @@ using namespace std;
 int main()
 {
 	int dim, nr;
+	srand(time(nullptr));
 	system("clear");
+	
 	char start;
-	cout<<"Minesweeper este un joc clasic de strategie pentru un singur jucător, "<<endl;
+	cout<<endl<<"Minesweeper este un joc clasic de strategie pentru un singur jucător, "<<endl;
     	cout<<"care implică descoperirea și marcarea tuturor celulelor care conțin "<<endl;
     	cout<<"mine într-un câmp de mine, evitând astfel să declanșeze vreo mină. "<<endl;
     	cout<<"Înainte de a începe jocul, jucătorul poate selecta nivelul de "<<endl;
@@ -23,7 +25,7 @@ int main()
     	cout<<"atunci aceasta va afișa numărul de mine din celulele adiacente. "<<endl;
     	cout<<"Jucătorul poate utiliza această informație pentru a deduce locația "<<endl;
     	cout<<"minelor. Jocul se câștigă atunci când toate celulele care nu conțin "<<endl;
-    	cout<<"mine au fost descoperite."<<endl<<endl<<" Apasa orice tasta pentru a incepe jocul!"<<endl;
+    	cout<<"mine au fost descoperite."<<endl<<endl<<" Press ENTER for start!"<<endl;
 	
 	start = getchar();
 
@@ -53,6 +55,7 @@ int main()
 			cout<<"Linia sau coloana e introdusa gresit!"<<endl;
 		tabla.show(lin, col);
 	}
+	system("clear");
 	tabla.afisare();
 	if (tabla.win())
     	{
